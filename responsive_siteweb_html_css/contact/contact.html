@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice - media query</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="anchor-contact">
+        <a href="../index.html"><img src="../image/logo-mini.png" alt="Logo"></a>
+        <form>
+            <input type="text" placeholder="Recherche">
+        </form>
+        <!--<a href="#"><img src="image/Hamburger_icon.svg.png" alt="Menu Principal"></a>-->
+        <input type="checkbox" id="op" />
+        <div class="lower">
+            <label for="op"><img src="../image/Hamburger_icon.svg.png" alt=""> </label> </div>
+        <div class="overlay overlay-hugeinc">
+            <label for="op">x</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../categorie/categorie.html">Catégorie</a></li>
+                    <li><a href="../evenement/evennement.html">Événement</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="navPc">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../categorie/categorie.html">Catégorie</a>
+                    <ul>
+                        <li><a href="../percussion/percussion.html">Percussion</a></li>
+                        <li><a href="../vent/vent.html">Vent</a></li>
+                        <li><a href="../corde/corde.html">corde</a></li>
+                        <li><a href="../accessoire/accessoire.html">Accessoires</a></li>
+                    </ul>
+                </li>
+                <li><a href="../evenement/evennement.html">Événement</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="../image/logo-large.png" alt="logo large" class="logo-large mobile-not">
+        <img src="../image/logo-large-alt.png" class="mobile-only logo-large" alt="logo large">
+
+    </header>
+    <aside>
+        <a href="#anchor-contact"> <img src="../image/flecheRetour.png" alt="Fleche ramener en haut"></a>
+    </aside>
+    <div class="formulaire">
+        <form action="#">
+            <h1> Contactez-nous</h1>
+            <div>
+                <label class="label-obligatoire" for="homme">Homme</label>
+                <input type="radio" id="homme" name="sex" value="homme" checked>
+                <label class="label-obligatoire" for="femme">Femme</label>
+                <input type="radio" id="femme" name="sex" value="femme">
+            </div>
+
+            <div>
+                <label for="lastName">Nom</label> <input type="text" id="lastName" placeholder="Nom"
+                    pattern=[a-zA-Z\s_-]+$ required="required" autofocus />
+            </div>
+            <div>
+                <label for="firstName">Prénom</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Prénom" pattern=[a-zA-Z\s_-]+$
+                    required="required" />
+            </div>
+            <div>
+                <label for="userEmail">Courriel</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Courriel"
+                    pattern="^[a-zA-Z\d]+@[a-zA-Z\d]+[\.]+[a-z]{2,3}$" required="required" />
+            </div>
+            <div>
+                <label for="userPhone">No Tel</label>
+                <input type="tel" id="userPhone" name="userPhone" placeholder="514-888-9999" required="required"
+                    pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" />
+            </div>
+            <div>
+                <label for="userAge"> Age</label>
+                <input type="number" id="userAge" name="userAge" min="18" max="150" required="required"
+                    placeholder="Âge" />
+            </div>
+            <div class="inline-block">
+                <div>
+                    <label class="label-obligatoire" for="vent">Vent</label>
+                    <input type="checkbox" id="vent" name="vent" checked>
+                </div>
+                <div>
+                    <label class="label-obligatoire" for="percussion">Percussion</label>
+                    <input type="checkbox" id="percussion" name="percussion">
+                </div>
+                <div>
+                    <label class="label-obligatoire" for="corde">Corde</label>
+                    <input type="checkbox" id="corde" name="corde">
+                </div>
+                <div>
+                    <label class="label-obligatoire" for="accessoire">Accessoire</label>
+                    <input type="checkbox" id="accessoire" name="accessoire">
+                </div>
+                <div>
+                    <label class="label-obligatoire" for="autre">Autre</label>
+                    <input type="checkbox" id="autre" name="autre">
+                </div>
+            </div>
+            <div>
+                <label class="label-obligatoire" for="choix">En quoi cela concerne t-il :</label><br>
+                <input list="liste_choix" id="choix">
+                <datalist id="liste_choix">
+                    <option value="Location">
+                    <option value="reservation">
+                    <option value="commande">
+                    <option value="achat">
+                </datalist>
+            </div>
+            <div>
+                ​<textarea id="txtArea" rows="5" cols="20"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="soumettre" value="envoyer" />
+            </div>
+        </form>
+        <div class="container-map">
+            <div>
+                <img src="images/icone1.jpg" alt="">
+                <img src="images/icone2.jpg" alt="">
+            </div>
+            <div class="maps">
+                <embed
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.207049454749!2d-1.5729033!3d47.2125309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0fcda6c4cb%3A0xd620ca38dafa1e9a!2s2+Rue+La+Motte+Picquet%2C+44100+Nantes!5e0!3m2!1sfr!2sfr!4v1423244007186" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="../image/copyright.png" alt="">
+            <img class="logoFooter" src="../image/logo-large.png" alt="Logo">
+        </div>
+        <div>
+            <div><span>Facebook</span><img src="../image/fbIcon.png" alt="Facebook"></div>
+            <div><span>Twitter</span><img src="../image/twitterLogo.jpg" alt="Twitter"></div>
+            <div><span>LinkedIn</span><img src="../image/inIcon.png" alt="LinkedIn"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

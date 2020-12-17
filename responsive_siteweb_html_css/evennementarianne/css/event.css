@@ -1,0 +1,75 @@
+.Month {
+    padding: 30px 25px;
+    background: lightcoral;
+    text-align: center;
+}
+
+.Month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.Month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Weekend {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Weekend li {
+    display: block;
+    width: 14%;
+    color: #666;
+    text-align: center;
+}
+
+.Day {
+    display: flex;
+    flex-wrap: wrap;
+    background: #eee;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.Day li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #777;
+    line-height: 35px;
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.Day li:nth-of-type(32), .Day li:nth-of-type(33), .Day li:nth-of-type(34), .Day li:nth-of-type(35) {
+    visibility: hidden;
+}
+
+.Day ul {
+    list-style-type: none;
+    width: 100%;
+}

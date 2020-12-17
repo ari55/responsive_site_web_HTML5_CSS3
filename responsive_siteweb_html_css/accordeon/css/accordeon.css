@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.accordeon {
+    width: 100%
+}
+
+.accordeon>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.accordeon .panel1 {
+    display: none;
+}
+
+.accordeon>input:first-child:checked~.tableau>#Description, .accordeon>input:nth-of-type(2):checked~.tableau>.panel1:nth-child(2), .accordeon>input:nth-of-type(3):checked~.tableau>.panel1:nth-child(3) {
+    display: block;
+}
+
+.accordeon>label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid red;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+    width: 33%;
+}
+
+.accordeon>label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+.accordeon>label:hover, .accordeon>input:focus+label {
+    color: red;
+}
+
+.accordeon>label:hover::after, .accordeon>input:focus+label::after, .accordeon>input:checked+label::after {
+    background: pink;
+}
+
+.accordeon>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.panel1 {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.accordeon {
+    max-width: 1040px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice - media query</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="anchor-detail">
+        <a href="../index.html"><img src="../image/logo-mini.png" alt="Logo"></a>
+        <form>
+            <input type="text" placeholder="Recherche">
+        </form>
+        <!--<a href="#"><img src="image/Hamburger_icon.svg.png" alt="Menu Principal"></a>-->
+        <input type="checkbox" id="op" />
+        <div class="lower">
+            <label for="op"><img src="../image/Hamburger_icon.svg.png" alt=""> </label> </div>
+        <div class="overlay overlay-hugeinc">
+            <label for="op">x</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../categorie/categorie.html">Catégorie</a></li>
+                    <li><a href="../evenement/evennement.html">Événement</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="navPc">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../categorie/categorie.html">Catégorie</a>
+                    <ul>
+                        <li><a href="../percussion/percussion.html">Percussion</a></li>
+                        <li><a href="../vent/vent.html">Vent</a></li>
+                        <li><a href="../corde/corde.html">corde</a></li>
+                        <li><a href="../accessoire/accessoire.html">Accessoires</a></li>
+                    </ul>
+                </li>
+                <li><a href="../evenement/evennement.html">Événement</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="../image/logo-large.png" alt="logo large" class="logo-large mobile-not">
+        <img src="../image/logo-large-alt.png" class="mobile-only logo-large" alt="logo large">
+
+    </header>
+    <aside>
+        <a href="#anchor-detail"> <img src="../image/flecheRetour.png" alt="Fleche ramener en haut"></a>
+    </aside>
+    <main id="detail-main">
+        <h1>YAS-875EX</h1>
+        <div>
+            <div>
+
+                <img src="../vent/image/vent-1.jpg" alt="">
+            </div>
+            <div class="accordeon">
+                <input type="radio" name="tab1" id="tab1" checked>
+                <label for="tab1">Description</label>
+                <input type="radio" name="tab1" id="tab2">
+                <label for="tab2">Video</label>
+                <input type="radio" name="tab1" id="tab3">
+                <label for="tab3">Image</label>
+                <input type="radio" name="tab1" id="tab4">
+                <label for="tab4">Commentaire</label>
+                <div class="tableau">
+                    <section id="Description" class="panel1">
+                        <h2>Description</h2>
+                        <p> The new Yamaha YAS-875EX Custom EX alto saxophone marks a huge step forward for saxophone
+                            design. Offering players a wealth of new musical possibilities, the new Custom EX has been
+                            designed in collaboration with some of the world’s most talented saxophonists, including
+                            Nobuya
+                            Sugawa, Jean-Yves Fourmeau and Otis Murphy. Their invaluable input has meant that Yamaha
+                            have
+                            been able to create an instrument that sounds great, is comfortable to play, and that
+                            constantly
+                            evolves with the player.</p>
+                    </section>
+                    <section id="Video" class="panel1">
+                        <h2>Video</h2>
+                        <video controls poster="video/poster.png">
+                            <source src="video/New_Custom_EX_Alto_Saxophone_YAS-875EX.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </section>
+                    <section id="Image" class="panel1">
+                        <h2>Image</h2>
+                        <div>
+                            <img src="image/vent-1.webp" alt="saxophone">
+                            <img src="image/vent-2.webp" alt="saxophone">
+                            <img src="image/vent-3.webp" alt="saxophone">
+                            <img src="../vent/image/vent-1.jpg" alt="saxophone">
+                        </div>
+                    </section>
+                    <section id="Commentaire" class="panel1">
+                        <h2>Commentaire</h2>
+                        <div>
+                            <img src="../image/commentaireImage.png" alt="photo utilisateur">
+                            <p> (Note: all pictures are after one year) I bought this pan exactly one year ago. It has
+                                converted me to Cast Iron after growing up with rusty pans, always thought Teflon was
+                                superior, Nope, Nada, Zip! Sure there is a little rust on the bottom of the pan but this
+                                is just me being lazy. The cooking surface is flawless.
+                                I use this pan 2-3 times a week, It actually has gotten better over time. Besides
+                                cooking eggs, use this for just about everything else on the stove top. I'll even do a
+                                steak when I don't feel like using the BBQ. It is heavy, I'm a grown man, holding it
+                                with one hand is limited to about 10 seconds.</p>
+                        </div>
+                        <div>
+                            <img src="../image/commentaireImage.png" alt="photo utilisateur">
+                            <p> Good product. Very robust construction, the thing weighs a lot! You will definitely need
+                                two hands to transfer this from the stove to the oven..</p>
+                        </div>
+                        <div>
+                            <img src="../image/commentaireImage.png" alt="photo utilisateur">
+                            <p> Pan is extremely heavy. I'm not sure if I received a defective unit, but the pan I
+                                received was definitely not preseasoned. It is impossible for me to cook anything except
+                                meats on this pan without sticking.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="../image/copyright.png" alt="">
+            <img class="logoFooter" src="../image/logo-large.png" alt="Logo">
+        </div>
+        <div>
+            <div><span>Facebook</span><img src="../image/fbIcon.png" alt="Facebook"></div>
+            <div><span>Twitter</span><img src="../image/twitterLogo.jpg" alt="Twitter"></div>
+            <div><span>LinkedIn</span><img src="../image/inIcon.png" alt="LinkedIn"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
